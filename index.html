@@ -5,15 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tourism App</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Tourismapp</title>
   </head>
   <body>
     <div class="container">
       <!--     Hero Section   -->
-      <div class="hero"></div>
+      <div class="hero">
+        <!--      Navbar     -->
+        <header class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./image/Road trip-pana.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <div class="navItems">
+            <ul>
+              <li>
+                <a href="#" onclick="toggleMenu();">Home</a>
+              </li>
+              <li>
+                <a href="#packages" onclick="toggleMenu();">Packages</a>
+              </li>
+              <li>
+                <a href="#services" onclick="toggleMenu();">Services</a>
+              </li>
+              <li>
+                <a href="#bookNow" onclick="toggleMenu();">Book Now</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <div class="home">
+          <video
+            src="./videos/vid-1.mp4"
+            id="video-slider"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="content">
+            <p>
+              Plan your trip with us
+              <br />
+              <span> Adventure Awaits.... </span> <br />
+              <button>Book Now</button>
+            </p>
+          </div>
+          <div class="controls">
+            <span class="vid-btn active" data-src="./videos/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="./videos/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="./videos/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="./videos/vid-4.mp4"></span>
+          </div>
+        </div>
+      </div>
 
       <!--     packages      -->
-      <div class="packages"></div>
+      <div class="packages">
+        <!-- <img src="./image/sunshine.jpg" alt="" /> -->
+      </div>
 
       <!--      Services      -->
       <div class="services"></div>
