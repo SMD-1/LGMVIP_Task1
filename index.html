@@ -395,16 +395,127 @@
       </div>
 
       <!--     Review      -->
-      <div class="review"></div>
+      <!-- <div class="review"></div> -->
 
       <!--    Book Now      -->
-      <div class="bookNow" id="bookNow"></div>
+      <div class="title">BOOK NOW</div>
+      <div class="bookNow" id="bookNow">
+        <div class="form">
+          <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Your Name" />
+          </div>
+          <div class="locppl">
+            <div class="location" style="grid-area: location">
+              <label for="location">Location: </label>
+              <input type="text" id="location" placeholder="Location" />
+            </div>
+            <div class="people" style="grid-area: people">
+              <label for="people">No.of People: </label>
+              <input type="number" id="people" value="2" />
+            </div>
+          </div>
+          <div class="stays">
+            <div class="sdate" style="grid-area: sdate">
+              <label for="sdate">Trip date: </label>
+              <input type="date" id="sdate" />
+            </div>
+            <div class="nofdays" style="grid-area: nofdays">
+              <label for="days">Staying till: </label>
+              <input type="date" id="days" />
+            </div>
+          </div>
+          <div class="submit">
+            <a href="#bookNow">Book Now</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/Trip-pana.svg" alt="trip" />
+        </div>
+      </div>
 
       <!--      Contact Us     -->
-      <div class="contactUs"></div>
+      <div class="title">Contact Us</div>
+      <i
+        class="fas fa-envelope-open-text fa-7x"
+        style="text-align: center; margin: 10px; color: rgb(255, 65, 65)"
+      ></i>
+      <p style="text-align: center; font-size: 1.5rem; font-weight: lighter">
+        Subscribe to our news letter for best offers
+      </p>
+      <div class="contactUs" id="contact">
+        <input type="email" placeholder="Your Email" />
+        <span style="margin: 10px 0; height: 100%">
+          <a href="#contact" style="text-decoration: none">Subscribe</a>
+        </span>
+      </div>
 
       <!--       Footer      -->
-      <div class="footer"></div>
+      <footer>
+        <div class="footer" id="footer">
+          <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, illo vero. Eum hic, vitae corporis atque explicabo
+              quae earum quam saepe, cupiditate impedit, maxime molestias. Eos
+              deserunt eum illum tempora.
+            </p>
+            <ul class="icons">
+              <li>
+                <a href="#footer"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#footer"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#footer"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/danish-shaikh-36306b1b0/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/SMD-1/"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sec quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#footer">About</a></li>
+              <li><a href="#footer">FAQ</a></li>
+              <li><a href="#footer">Privacy</a></li>
+              <li><a href="#footer">Help</a></li>
+              <li><a href="#footer">Terms & condition</a></li>
+            </ul>
+          </div>
+          <div class="sec contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fas fa-map-marker-alt"></i></i></span>
+                <span
+                  >Squtter colony <br />
+                  Mumbai , 400060. <br />India</span
+                >
+              </li>
+              <li>
+                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <p><a href="tel:1234567890">+91 2345212234</a></p>
+              </li>
+
+              <li>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <p>
+                  <a href="mailto:skdanish1999@gmail.com"
+                    >skdanish1999@gmail.com</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="app.js"></script>
