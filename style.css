@@ -218,6 +218,7 @@ li:hover a {
   border-radius: 5px;
   background: #ff7161;
   color: #fff;
+  text-decoration: none;
 }
 
 /*    SERVICES    */
@@ -443,6 +444,16 @@ footer .footer .quickLinks h2:before {
 .contact .info li a:hover {
   color: #fff;
   border-bottom: 1px solid #fff;
+}
+
+/* map */
+.map {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.map iframe {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
