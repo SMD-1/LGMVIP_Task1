@@ -146,7 +146,8 @@ li:hover a {
   border-radius: 10px;
   margin-top: 20px;
 }
-.packages {
+.packages,
+.ourTeam {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -155,7 +156,7 @@ li:hover a {
   margin: 0 auto;
   padding: 10px;
 }
-.packages .card {
+.card {
   display: grid;
   grid-gap: 1rem;
   grid-auto-rows: 1fr 1fr;
@@ -181,8 +182,6 @@ li:hover a {
   z-index: 1;
 }
 .card .image img {
-  padding: 0;
-  margin: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -313,11 +312,48 @@ input {
   text-decoration: none;
 }
 
-/*      Contact us       */
+/*      Our Team       */
+#ourTeam {
+  margin: 3rem auto;
+}
+.ourTeam {
+  width: 60%;
+  margin: 1rem auto;
+}
+.ourTeam .card {
+  height: 250px;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(182 181 181 / 20%),
+    inset 5px 5px 5px rgb(216 240 255 / 51%);
+}
+.ourTeam .image {
+  width: 90px;
+  height: 90px;
+  margin: 1.5rem auto 1rem;
+}
+.ourTeam .image img {
+  border-radius: 50%;
+}
+.ourTeam .card .content {
+  text-align: center;
+}
+
+/*      subscribe us       */
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background: rgba(192, 192, 192, 0.5);
+}
 .contactUs {
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 40vw;
   margin: 10px auto;
   border: none;
 }
@@ -505,6 +541,7 @@ footer .footer .quickLinks h2:before {
   .navItems.active li a {
     color: #000;
     border: none;
+    font-size: 1.5rem;
   }
   .navItems.active li:hover a {
     color: #ff0157;
@@ -512,6 +549,9 @@ footer .footer .quickLinks h2:before {
   .bookNow .image img {
     width: 100%;
     height: 300px;
+  }
+  .contactUs {
+    width: 70vw;
   }
   footer {
     padding: 40px;
@@ -535,9 +575,16 @@ footer .footer .quickLinks h2:before {
   .services {
     width: 80%;
   }
-  .packages {
+  .packages,
+  .ourTeam {
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .ourTeam {
+    width: 60%;
+  }
+  .ourTeam .card {
+    height: 220px;
   }
   .card .content h4 {
     padding: 10px 20px;
@@ -571,6 +618,9 @@ footer .footer .quickLinks h2:before {
       "location"
       "people";
   }
+  .ourTeam {
+    width: 60%;
+  }
   .stays {
     grid-template-areas:
       "sdate"
@@ -586,7 +636,8 @@ footer .footer .quickLinks h2:before {
     border-radius: 0;
   }
   .packages,
-  .services {
+  .services,
+  .ourTeam {
     width: 70%;
     grid-template-columns: 1fr;
   }
