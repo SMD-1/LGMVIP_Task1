@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <!--     Hero Section   -->
+      <!--      Home Container     -->
       <div class="hero">
         <!--      Navbar     -->
         <header class="navbar">
@@ -42,7 +42,7 @@
             </ul>
           </div>
         </header>
-
+        <!--       Hero section      -->
         <div class="home">
           <video
             src="./videos/vid-1.mp4"
@@ -56,7 +56,9 @@
               Plan your trip with us
               <br />
               <span> Adventure Awaits.... </span> <br />
-              <button>Book Now</button>
+              <a href="#bookNow" onclick="toggleMenu();">
+                <button>Book Now</button>
+              </a>
             </p>
           </div>
           <div class="controls">
@@ -69,8 +71,8 @@
       </div>
 
       <!--     packages      -->
-      <div class="title">PACKAGES</div>
-      <div class="packages" id="packages">
+      <div class="title" id="packages">PACKAGES</div>
+      <div class="packages" >
         <div class="card">
           <div class="image">
             <div class="offer">
@@ -244,8 +246,8 @@
       </div>
 
       <!--      Services      -->
-      <div class="title">SERVICES</div>
-      <div class="services" id="services">
+      <div class="title" id="services">SERVICES</div>
+      <div class="services">
         <div
           class="hotel"
           style="
@@ -395,8 +397,8 @@
       </div>
 
       <!--    Book Now      -->
-      <div class="title">BOOK NOW</div>
-      <div class="bookNow" id="bookNow">
+      <div class="title" id="bookNow">BOOK NOW</div>
+      <div class="bookNow">
         <div class="form">
           <div class="name">
             <label for="name">Name: </label>
@@ -432,7 +434,7 @@
       </div>
 
       <!--      Contact Us     -->
-      <div class="title">Contact Us</div>
+      <div class="title" id="contact">Contact Us</div>
       <i
         class="fas fa-envelope-open-text fa-7x"
         style="text-align: center; margin: 10px; color: rgb(255, 65, 65)"
@@ -440,7 +442,7 @@
       <p style="text-align: center; font-size: 1.5rem; font-weight: lighter">
         Subscribe to our news letter for best offers
       </p>
-      <div class="contactUs" id="contact">
+      <div class="contactUs">
         <input type="email" placeholder="Your Email" />
         <span style="margin: 10px 0; height: 100%">
           <a href="#contact" style="text-decoration: none">Subscribe</a>
@@ -450,8 +452,8 @@
        
 
       <!--       Footer      -->
-      <footer>
-        <div class="footer" id="footer">
+      <footer id="footer">
+        <div class="footer">
           <div class="sec aboutus">
             <h2>About Us</h2>
             <p>

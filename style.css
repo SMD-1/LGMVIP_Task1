@@ -181,6 +181,8 @@ li:hover a {
   z-index: 1;
 }
 .card .image img {
+  padding: 0;
+  margin: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -545,6 +547,9 @@ footer .footer .quickLinks h2:before {
   .services {
     width: 70%;
     grid-template-columns: 1fr 1fr;
+  }
+  .navbar {
+    padding: 20px 30px;
   }
   .bookNow {
     width: 80%;
